@@ -442,3 +442,10 @@ header.is-fixed {
   display: flex;
   align-items: center;
 }
+.color-white {
+    color:white;
+}
+
+.color-grey {
+    color:#262626;
+}
