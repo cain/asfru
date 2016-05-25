@@ -36,8 +36,8 @@ body {
    /*   font: normal 1em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;  */ 
     font-family: 'Roboto', sans-serif;
   color: #4e6361;
+    background-color: #d3d3d3;
 
-  background-color: #e2d22a;
 
 }
 
@@ -59,9 +59,6 @@ Modules - reusable parts of our design
   white-space: nowrap;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
 
 /* -------------------------------- 
 
@@ -74,10 +71,11 @@ Main components
   position: relative;
 
         background-image:    url(../img/background.jpg);
-    background-size:     cover;                      /* <------ */
+                     /* <------ */
     background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image */
-  background-color: #9b5050;
+    background-position: center center;    
+    background-size: cover;/* optional, center the image */
+    background-color: #d3d3d3;
   z-index: 2;
   padding-top: 50px;
   /* Force Hardware Acceleration in WebKit */
@@ -435,4 +433,12 @@ header.is-fixed {
     font-style: italic;
     color:white;
     text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.75);
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 85vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
