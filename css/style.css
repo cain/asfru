@@ -1,3 +1,24 @@
+/*
+Theme Name: Twenty Sixteen
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+
+
 /* -------------------------------- 
 
 Primary style
@@ -35,7 +56,7 @@ body {
  /* font-family: "Titillium Web", sans-serif; */
    /*   font: normal 1em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;  */ 
     font-family: 'Roboto', sans-serif;
-  color: #4e6361;
+  color: white;
     background-color: #d3d3d3;
     
         background-image:    url(../images/background.jpg);
@@ -447,6 +468,15 @@ header.is-fixed {
   display: flex;
   align-items: center;
 }
+
+.vertical-center-page {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 85vh; /* These two lines are counted as one :-)       */
+margin-top:90px;
+    background-color:rgba(0,0,0,0.8);
+    padding:40px;
+
+}
 .color-white {
     color:white;
 }
@@ -518,3 +548,10 @@ footer { background-color:#0f0f0f; min-height:350px; font-family: 'Open Sans', s
  .bottom_ul li { float:left; line-height:40px;}
  .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
  .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+.page-container {
+    background-color:rgba(23,23,23,0.98);
+    padding-top:20px;
+    margin-top:-100px;
+    padding-bottom:80px;
+}
